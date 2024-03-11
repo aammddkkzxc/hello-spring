@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.Optional;
 import org.springframework.stereotype.Repository;
 
-@Repository
+
 public class MemoryMemberRepository implements MemberRepository{
     //실무에서는 동시성 문제 때문에 concurrent해시맵씀
     private static Map<Long, Member> store = new HashMap<>();
